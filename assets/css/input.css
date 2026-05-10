@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@theme{
+    --font-inter: "Inter", sans-serif; 
+}
+@utility row{
+    @apply flex items-center;
+    
+}
+
+@utility colm{
+    @apply flex-col items-center;
+}
+.wrapper {
+    @apply max-w-640  mx-auto px-6;
+}
+body{
+    font-family:var(Inter) 
+}
+
+.bgImg {
+    width: 100%;
+    height: 70vh;
+    background-image:
+        linear-gradient(
+            to right,
+            #0b1f3a66 0%,
+            #0b1a2ed0 80%,
+            #0b1f3afa 100%
+        ),
+        url(../Imgs/Hero/heroBanner.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+}
