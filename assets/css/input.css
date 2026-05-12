@@ -33,3 +33,35 @@ body{
             background-position: center;
             background-repeat: no-repeat;
 }
+.FWCard{
+    background-image: url(../Imgs/infastructures/firewall.png);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.SWCard{
+    background-image: url(../Imgs/infastructures/switch.png);
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.CBCard{
+    background-image: url(../Imgs/infastructures/cables.png);
+    width: 100%;
+    height: 200px;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* .RCCard{
+    background-image: url(../Imgs/infastructures/Rack.png);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
