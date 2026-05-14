@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -17,11 +18,13 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-xs: 0.125rem;
     --radius-sm: 0.25rem;
+    --radius-lg: 0.5rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -182,14 +185,14 @@
   .relative {
     position: relative;
   }
-  .col-span-1 {
-    grid-column: span 1 / span 1;
+  .col-span-12 {
+    grid-column: span 12 / span 12;
   }
-  .col-span-2 {
-    grid-column: span 2 / span 2;
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
   }
-  .col-span-4 {
-    grid-column: span 4 / span 4;
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
@@ -210,6 +213,15 @@
   .inline-block {
     display: inline-block;
   }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
@@ -219,11 +231,20 @@
   .max-w-2xl {
     max-width: var(--container-2xl);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
   }
   .items-start {
     align-items: flex-start;
@@ -234,6 +255,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -243,11 +267,18 @@
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
   }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
   .rounded-xs {
     border-radius: var(--radius-xs);
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
   }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
@@ -263,8 +294,14 @@
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
+  .border-transparent {
+    border-color: transparent;
+  }
   .border-white {
     border-color: var(--color-white);
+  }
+  .bg-\[\#0B1F3A\] {
+    background-color: #0B1F3A;
   }
   .bg-\[\#00658D\] {
     background-color: #00658D;
@@ -320,6 +357,9 @@
   .text-\[16px\] {
     font-size: 16px;
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -327,6 +367,10 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -340,6 +384,12 @@
   }
   .text-\[\#475569\] {
     color: #475569;
+  }
+  .text-\[\#E2E8F0\] {
+    color: #E2E8F0;
+  }
+  .text-sky-500 {
+    color: var(--color-sky-500);
   }
   .text-white {
     color: var(--color-white);
@@ -355,6 +405,17 @@
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .delay-300 {
+    transition-delay: 300ms;
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .duration-400 {
+    --tw-duration: 400ms;
+    transition-duration: 400ms;
   }
   .duration-500 {
     --tw-duration: 500ms;
@@ -372,10 +433,52 @@
       }
     }
   }
+  .hover\:gap-3 {
+    &:hover {
+      @media (hover: hover) {
+        gap: calc(var(--spacing) * 3);
+      }
+    }
+  }
+  .hover\:border-white {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:bg-\[\#14233d\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #14233d;
+      }
+    }
+  }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-\[\#000615\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #000615;
+      }
+    }
+  }
   .hover\:text-\[\#2563EB\] {
     &:hover {
       @media (hover: hover) {
         color: #2563EB;
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
@@ -384,6 +487,21 @@
       @media (hover: hover) {
         text-decoration-line: underline;
       }
+    }
+  }
+  .sm\:col-span-1 {
+    @media (width >= 40rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .sm\:col-span-2 {
+    @media (width >= 40rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .sm\:col-span-4 {
+    @media (width >= 40rem) {
+      grid-column: span 4 / span 4;
     }
   }
   .md\:block {
@@ -408,6 +526,11 @@
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.xs\:col-span-12 {
+  @media (width >= 23rem ) {
+    grid-column: span 12;
+  }
+}
 .wrapper {
   margin-inline: auto;
   max-width: calc(var(--spacing) * 640);
@@ -436,17 +559,32 @@ body {
   background-image: url(../Imgs/infastructures/switch.png);
   width: 100%;
   height: 200px;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: left;
   background-repeat: no-repeat;
 }
 .CBCard {
   background-image: url(../Imgs/infastructures/cables.png);
   width: 100%;
   height: 200px;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.FWCard, .SWCard,.CBCard {
+  position: relative;
+  overflow: hidden;
+}
+.FWCard::before, .SWCard::before, .CBCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.315);
+  z-index: 1;
+}
+.FWCard > div, .SWCard > div {
+  position: relative;
+  z-index: 2;
 }
 @property --tw-border-style {
   syntax: "*";

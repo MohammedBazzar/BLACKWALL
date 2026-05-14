@@ -8,6 +8,11 @@
     
 }
 
+.xs\:col-span-12 {
+    @media (width >= 23rem /* 640px */) {
+        grid-column: span 12;
+    }
+}
 @utility colm{
     @apply flex-col items-center;
 }
@@ -41,19 +46,21 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .SWCard{
     background-image: url(../Imgs/infastructures/switch.png);
     width: 100%;
     height: 200px;
-    background-size: contain;
-    background-position: center;
+    background-size:cover;
+    background-position:left;
     background-repeat: no-repeat;
 }
+
 .CBCard{
     background-image: url(../Imgs/infastructures/cables.png);
     width: 100%;
     height: 200px;
-    background-size:contain;
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -65,3 +72,26 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 } */
+
+.FWCard,
+.SWCard,.CBCard {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.FWCard::before,
+.SWCard::before,
+.CBCard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.315); 
+    z-index: 1;
+}
+
+.FWCard > div,
+.SWCard > div {
+    position: relative;
+    z-index: 2;
+}
