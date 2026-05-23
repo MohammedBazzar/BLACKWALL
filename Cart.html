@@ -69,7 +69,7 @@
             </div>
             <div class="CartItems flex flex-col xl:lg:flex-row justify-evenly gap-6 pb-12">
                 <div class="items flex flex-col gap-6 grow">
-                    <div class="itemCard flex flex-row p-6 gap-6 border border-[#C4C6CE] rounded-sm ">
+                    <div class="itemCard flex flex-col xl:flex-row  p-6 gap-6 border border-[#C4C6CE] rounded-sm ">
                         <div class="itemImg">
                             <img src="./assets/Imgs/Cart/CoreSwitch.png" alt="CoreSwitch image">
                         </div>
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="itemCard flex flex-row p-6 gap-6 border border-[#C4C6CE] rounded-sm ">
+                    <div class="itemCard flex flex-col lg:flex-row p-6 gap-6 border border-[#C4C6CE] rounded-sm ">
                         <div class="itemImg">
                             <img src="./assets/Imgs/Cart/FireWall.png" alt="FireWall image">
                         </div>
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="itemCard flex flex-row p-6 gap-6 border border-[#C4C6CE] rounded-sm ">
+                    <div class="itemCard flex flex-col lg:flex-row p-6 gap-6 border border-[#C4C6CE] rounded-sm ">
                         <div class="itemImg">
                             <img src="./assets/Imgs/Cart/OpticCables.png" alt="Optic Cables image">
                         </div>
@@ -167,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="itemsSummary bg-[#0B1F3A] p-8 rounded-sm h-100">
+                <div class="itemsSummary bg-[#0B1F3A] p-8 rounded-sm h-full">
                     <h2 class="text-[32px] font-semibold text-white pb-8">Deployment Summary</h2>
                     <div class="flex flex-col gap-y-4">
                         <div class="itemPrice flex flex-row justify-between items-center">
@@ -191,7 +191,37 @@
                         <span class="text-[30px] font-noraml text-white">Total Estimate</span>
                         <span class="text-[30px] font-noraml text-white">$32,857.00</span>
                     </div>
-                    <p>QUOTES ARE VALID FOR 30 DAYS. SUBJECT TO AVAILABILITY.</p>
+                    <div class="div flex flex-col gap-2 mt-2">
+                        <div class="SLA  flex flex-col gap-2 bg-[#1a2a46] border-white py-4 rounded-sm p-4">
+                            <div class="div flex flex-row gap-2 items-center">
+                                <img src="./assets/Imgs/Cart/SLAIcon.png" alt="SLA icon">
+                                <p class="text-[12px] font-semibold text-white">SLA COVERAGE INCLUDED</p>
+                            </div>
+                            <p class="text-[11px] font-normal text-[#7587A7]">
+                                99.999% uptime guarantee with 4-hour on-site
+                                hardware replacement for critical failures.
+                            </p>
+                        </div>
+                            <button type="button"
+                            class="flex flex-row justify-center items-center py-4 text-[14px] font-bold  text-[#000615] bg-white  rounded-sm cursor-pointer hover:bg-[#14233d]
+                            hover:text-white border-2 border-transparent hover:border-white delay-300 transition-all duration-400 ease-in-out">
+                            PROCEED TO PROVISIONING
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7" />
+                                </svg>
+                            </button>
+
+                            <button type="button"
+                            class="flex flex-row gap-2 justify-center items-center py-4 text-[14px] font-bold  text-white  bg-[#1a2a46] border-white rounded-sm cursor-pointer hover:bg-white 
+                            hover:text-[#000615] border-1 hover:border-white delay-300 transition-all duration-400 ease-in-out">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979167 15.8042 0.5875 15.4125C0.195833 15.0208 0 14.55 0 14V11H2V14H14V11H16V14C16 14.55 15.8042 15.0208 15.4125 15.4125C15.0208 15.8042 14.55 16 14 16H2Z" fill="white"/>
+</svg>
+Export Datasheet (PDF)
+                            </button>
+                    </div>
+                    <p class="text-[13px] text-center font-normal text-[#7587A7] mt-6">QUOTES ARE VALID FOR 30 DAYS. SUBJECT TO AVAILABILITY.</p>
                 </div>
             </div>
         </div>
