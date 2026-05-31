@@ -147,7 +147,7 @@
                             </svg>
                         </button>
                         <el-menu anchor="bottom end" popover
-                            class="m-0 w-56 origin-top-right rounded-md bg-white p-0 outline  -outline-offset-1 outline-white/10 transition [--anchor-gap:--spacing(2)] transition-discrete data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in">
+                            class="m-0 w-56 origin-top-right rounded-md bg-white p-0 outline  -outline-offset-1 outline-white/10 transition [--anchor-gap:--spacing(2)] transition-discrete data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-leave:duration-75 data-enter:ease-out data-leave:ease-in">
                             <div class="py-1">
                                 <a href="#" class="block px-4 py-2 text-sm text-[#1B1B1E] focus:bg-gray-600"> 4 PORT</a>
                                 <a href="#" class="block px-4 py-2 text-sm text-[#1B1B1E] focus:bg-gray-600">8 PORT</a>
@@ -177,267 +177,329 @@
             </div>
             <div class="CategoryItems w-full">
                 <div class="itemsHeader flex flex-row justify-between border border-[#E2E8F0] rounded-lg p-4 mb-2">
-                    <span class="text-[15px] text-[#1B1B1E] font-normal">Showing <span class="text-[15px] text-black font-bold">1-12</span> of 48 technical assets</span>
+                    <span class="text-[15px] text-[#1B1B1E] font-normal">Showing <span
+                            class="text-[15px] text-black font-bold">1-12</span> of 48 technical assets</span>
                     <div class="SortItems itemsHeader flex flex-row justify-between items-center gap-4">
                         <span class="text-[12px] text-[#1B1B1E] font-semibold">SORT BY:</span>
                         <span class="text-[15px] text-black font-semibold">Performance (High to Low)</span>
                         <span>
-                            <svg width="20" height="10" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="10" viewBox="0 0 7 5" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M3.5 4.31667L0 0.816667L0.816667 0L3.5 2.68333L6.18333 0L7 0.816667L3.5 4.31667Z"
                                     fill="#44474D" />
                             </svg>
                     </div>
                 </div>
-                <div class="ItemsSection grid md:grid-cols-2 lg:grid-cols-3 justify-items-center mx-auto max-w-7xl gap-6">
-                    <div class="itemCard lg:max-w-[300px] lg:max-h-[570px] flex flex-col border border-[#C4C6CE] rounded-sm">
+                <div
+                    class="ItemsSection grid md:grid-cols-2 lg:grid-cols-3 justify-items-center mx-auto max-w-7xl gap-6">
+                    <div class="itemCard lg:max-w-75 lg:max-h-142.5 flex flex-col border border-[#C4C6CE] rounded-sm">
                         <div class="img">
-                        <div class="imgBackground bg-[#F1F5F9] p-6 relative">
-                            <img class="mix-blend-multiply opacity-90 " src="./assets/Imgs/Products/Catalyst9300Series.png"
-                                alt="Switch image">
-                            <div class="pruductStatuse absolute top-2 left-2">
-                                <span class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl">IN STOCK</span>
+                            <div class="imgBackground bg-[#F1F5F9] p-6 relative">
+                                <img class="mix-blend-multiply opacity-90 "
+                                    src="./assets/Imgs/Products/Catalyst9300Series.png" alt="Switch image">
+                                <div class="pruductStatuse absolute top-2 left-2">
+                                    <span class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl">IN
+                                        STOCK</span>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                    <div class="iteminfo p-4 flex flex-col gap-2 ">
-                        <div class="ProductTags flex flex-row  gap-x-2">
-                            <span
-                                class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">CISCO</span>
-                            <span
-                                class="text-[10px] font-normal bg-[#EFF6FF] text-[#2563EB] py-0.5 px-2 rounded-sm">10GbE</span>
-                        </div>
-                        <div class="ProductTitle">
-                            <h3 class="text-[20px] font-normal text-[#000615]">Catalyst 9300 Series</h3>
-                        </div>
-                        <div class="productdescription mb-3">
-                            <p class="text-[14px] font-normal text-[#44474D]">Fixed stackable enterprise switching latform for security, IoT, and cloud.</p>
-                        </div>
-                        <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">THROUGHPUT</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">480 Gbps</span>
-                                    </div>
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">PORTS</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">48x 10/100/1000</span>
+                        <div class="iteminfo p-4 flex flex-col gap-2 ">
+                            <div class="ProductTags flex flex-row  gap-x-2">
+                                <span
+                                    class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">CISCO</span>
+                                <span
+                                    class="text-[10px] font-normal bg-[#EFF6FF] text-[#2563EB] py-0.5 px-2 rounded-sm">10GbE</span>
+                            </div>
+                            <div class="ProductTitle">
+                                <h3 class="text-[20px] font-normal text-[#000615]">Catalyst 9300 Series</h3>
+                            </div>
+                            <div class="productdescription mb-3">
+                                <p class="text-[14px] font-normal text-[#44474D]">Fixed stackable enterprise switching
+                                    latform for security, IoT, and cloud.</p>
+                            </div>
+                            <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">THROUGHPUT</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">480 Gbps</span>
                                 </div>
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">PORTS</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">48x 10/100/1000</span>
                                 </div>
-                        <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
-                            <span class="text-[18px] font-bold text-[#000615]">$4,895.00</span>
-                            <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
-                                VIEW
-                            </button>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="itemCard lg:max-w-[300px] lg:max-h-[570px] flex flex-col border border-[#C4C6CE] rounded-sm">
-                        <div class="img">
-                        <div class="imgBackground bg-[#F1F5F9] p-6 relative">
-                            <img class="mix-blend-multiply opacity-90 " src="./assets/Imgs/Products/Catalyst9300Series.png"
-                                alt="Switch image">
-                            <div class="pruductStatuse absolute top-2 left-2">
-                                <span class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl">IN STOCK</span>
+                            </div>
+                            <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
+                                <span class="text-[18px] font-bold text-[#000615]">$4,895.00</span>
+                                <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
+                                    VIEW
+                                </button>
                             </div>
                         </div>
-                        </div>
-                    <div class="iteminfo p-4 flex flex-col gap-2 ">
-                        <div class="ProductTags flex flex-row  gap-x-2">
-                            <span
-                                class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">CISCO</span>
-                            <span
-                                class="text-[10px] font-normal bg-[#EFF6FF] text-[#2563EB] py-0.5 px-2 rounded-sm">10GbE</span>
-                        </div>
-                        <div class="ProductTitle">
-                            <h3 class="text-[20px] font-normal text-[#000615]">Catalyst 9300 Series</h3>
-                        </div>
-                        <div class="productdescription mb-3">
-                            <p class="text-[14px] font-normal text-[#44474D]">Fixed stackable enterprise switching latform for security, IoT, and cloud.</p>
-                        </div>
-                        <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">THROUGHPUT</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">480 Gbps</span>
-                                    </div>
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">PORTS</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">48x 10/100/1000</span>
-                                </div>
-                                </div>
-                        <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
-                            <span class="text-[18px] font-bold text-[#000615]">$4,895.00</span>
-                            <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
-                                VIEW
-                            </button>
-                        </div>
                     </div>
-                    </div>
-                    <div class="itemCard lg:max-w-[300px] lg:max-h-[570px] flex flex-col border border-[#C4C6CE] rounded-sm">
+                    <div class="itemCard lg:max-w-75 lg:max-h-142.5 flex flex-col border border-[#C4C6CE] rounded-sm">
                         <div class="img">
-                        <div class="imgBackground bg-[#F1F5F9] p-6 relative">
-                            <img class="mix-blend-multiply opacity-90 " src="./assets/Imgs/Products/Catalyst9300Series.png"
-                                alt="Switch image">
-                            <div class="pruductStatuse absolute top-2 left-2">
-                                <span class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl">IN STOCK</span>
+                            <div class="imgBackground bg-[#F1F5F9] p-6 relative">
+                                <img class="mix-blend-multiply opacity-90 "
+                                    src="./assets/Imgs/Products/FortiGate100F.png" alt="core image">
+                                <div class="pruductStatuse absolute top-2 left-2">
+                                    <span
+                                        class="text-[12px] font-bold bg-[#F59E0B] text-[#FFFFFF] p-2 rounded-xl">BACKORDERED</span>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                    <div class="iteminfo p-4 flex flex-col gap-2 ">
-                        <div class="ProductTags flex flex-row  gap-x-2">
-                            <span
-                                class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">CISCO</span>
-                            <span
-                                class="text-[10px] font-normal bg-[#EFF6FF] text-[#2563EB] py-0.5 px-2 rounded-sm">10GbE</span>
-                        </div>
-                        <div class="ProductTitle">
-                            <h3 class="text-[20px] font-normal text-[#000615]">Catalyst 9300 Series</h3>
-                        </div>
-                        <div class="productdescription mb-3">
-                            <p class="text-[14px] font-normal text-[#44474D]">Fixed stackable enterprise switching latform for security, IoT, and cloud.</p>
-                        </div>
-                        <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">THROUGHPUT</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">480 Gbps</span>
-                                    </div>
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">PORTS</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">48x 10/100/1000</span>
+                        <div class="iteminfo p-4 flex flex-col gap-2 ">
+                            <div class="ProductTags flex flex-row  gap-x-2">
+                                <span
+                                    class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">FORTINET</span>
+                                <span
+                                    class="text-[10px] font-normal bg-[#FEF2F2] text-[#DC2626] py-0.5 px-2 rounded-sm">UTM</span>
+                            </div>
+                            <div class="ProductTitle">
+                                <h3 class="text-[20px] font-normal text-[#000615]">FortiGate 100F</h3>
+                            </div>
+                            <div class="productdescription mb-3">
+                                <p class="text-[14px] font-normal text-[#44474D]">Next-generation firewall for mid-sized
+                                    enterprises with SD-WAN capabilities.</p>
+                            </div>
+                            <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">THROUGHPUT</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">1 Gbps</span>
                                 </div>
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">Interfaces</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">22x RJ45</span>
                                 </div>
-                        <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
-                            <span class="text-[18px] font-bold text-[#000615]">$4,895.00</span>
-                            <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
-                                VIEW
-                            </button>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="itemCard lg:max-w-[300px] lg:max-h-[570px] flex flex-col border border-[#C4C6CE] rounded-sm">
-                        <div class="img">
-                        <div class="imgBackground bg-[#F1F5F9] p-6 relative">
-                            <img class="mix-blend-multiply opacity-90 " src="./assets/Imgs/Products/Catalyst9300Series.png"
-                                alt="Switch image">
-                            <div class="pruductStatuse absolute top-2 left-2">
-                                <span class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl">IN STOCK</span>
+                            </div>
+                            <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
+                                <span class="text-[18px] font-bold text-[#000615]">$2,450.00</span>
+                                <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
+                                    VIEW
+                                </button>
                             </div>
                         </div>
-                        </div>
-                    <div class="iteminfo p-4 flex flex-col gap-2 ">
-                        <div class="ProductTags flex flex-row  gap-x-2">
-                            <span
-                                class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">CISCO</span>
-                            <span
-                                class="text-[10px] font-normal bg-[#EFF6FF] text-[#2563EB] py-0.5 px-2 rounded-sm">10GbE</span>
-                        </div>
-                        <div class="ProductTitle">
-                            <h3 class="text-[20px] font-normal text-[#000615]">Catalyst 9300 Series</h3>
-                        </div>
-                        <div class="productdescription mb-3">
-                            <p class="text-[14px] font-normal text-[#44474D]">Fixed stackable enterprise switching latform for security, IoT, and cloud.</p>
-                        </div>
-                        <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">THROUGHPUT</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">480 Gbps</span>
-                                    </div>
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">PORTS</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">48x 10/100/1000</span>
-                                </div>
-                                </div>
-                        <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
-                            <span class="text-[18px] font-bold text-[#000615]">$4,895.00</span>
-                            <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
-                                VIEW
-                            </button>
-                        </div>
                     </div>
-                    </div>
-                    <div class="itemCard lg:max-w-[300px] lg:max-h-[570px] flex flex-col border border-[#C4C6CE] rounded-sm">
+                    <div class="itemCard lg:max-w-75 lg:max-h-142.5 flex flex-col border border-[#C4C6CE] rounded-sm">
                         <div class="img">
-                        <div class="imgBackground bg-[#F1F5F9] p-6 relative">
-                            <img class="mix-blend-multiply opacity-90 " src="./assets/Imgs/Products/Catalyst9300Series.png"
-                                alt="Switch image">
-                            <div class="pruductStatuse absolute top-2 left-2">
-                                <span class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl">IN STOCK</span>
+                            <div class="imgBackground bg-[#F1F5F9] p-6 relative">
+                                <img class="mix-blend-multiply opacity-90 "
+                                    src="./assets/Imgs/Products/UniFiSwitchPro48.png" alt="Switch image">
+                                <div class="pruductStatuse absolute top-2 left-2 hidden">
+                                    <span
+                                        class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl"></span>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                    <div class="iteminfo p-4 flex flex-col gap-2 ">
-                        <div class="ProductTags flex flex-row  gap-x-2">
-                            <span
-                                class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">CISCO</span>
-                            <span
-                                class="text-[10px] font-normal bg-[#EFF6FF] text-[#2563EB] py-0.5 px-2 rounded-sm">10GbE</span>
-                        </div>
-                        <div class="ProductTitle">
-                            <h3 class="text-[20px] font-normal text-[#000615]">Catalyst 9300 Series</h3>
-                        </div>
-                        <div class="productdescription mb-3">
-                            <p class="text-[14px] font-normal text-[#44474D]">Fixed stackable enterprise switching latform for security, IoT, and cloud.</p>
-                        </div>
-                        <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">THROUGHPUT</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">480 Gbps</span>
-                                    </div>
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">PORTS</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">48x 10/100/1000</span>
+                        <div class="iteminfo p-4 flex flex-col gap-2 ">
+                            <div class="ProductTags flex flex-row  gap-x-2">
+                                <span
+                                    class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">UBIQUITI</span>
+                                <span
+                                    class="text-[10px] font-normal bg-[#F0FDF4] text-[#16A34A] py-0.5 px-2 rounded-sm">POE++</span>
+                            </div>
+                            <div class="ProductTitle">
+                                <h3 class="text-[20px] font-normal text-[#000615]">UniFi Switch Pro 48</h3>
+                            </div>
+                            <div class="productdescription mb-3">
+                                <p class="text-[14px] font-normal text-[#44474D]">Fully managed Layer 3 switch with 48
+                                    ports of 802.3bt PoE++ output.</p>
+                            </div>
+                            <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">PoE Power</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">600W Total</span>
                                 </div>
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">Uplinks</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">4x 10G SFP+</span>
                                 </div>
-                        <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
-                            <span class="text-[18px] font-bold text-[#000615]">$4,895.00</span>
-                            <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
-                                VIEW
-                            </button>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="itemCard lg:max-w-[300px] lg:max-h-[570px] flex flex-col border border-[#C4C6CE] rounded-sm">
-                        <div class="img">
-                        <div class="imgBackground bg-[#F1F5F9] p-6 relative">
-                            <img class="mix-blend-multiply opacity-90 " src="./assets/Imgs/Products/Catalyst9300Series.png"
-                                alt="Switch image">
-                            <div class="pruductStatuse absolute top-2 left-2">
-                                <span class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl">IN STOCK</span>
+                            </div>
+                            <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
+                                <span class="text-[18px] font-bold text-[#000615]">$1,099.00</span>
+                                <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
+                                    VIEW
+                                </button>
                             </div>
                         </div>
-                        </div>
-                    <div class="iteminfo p-4 flex flex-col gap-2 ">
-                        <div class="ProductTags flex flex-row  gap-x-2">
-                            <span
-                                class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">CISCO</span>
-                            <span
-                                class="text-[10px] font-normal bg-[#EFF6FF] text-[#2563EB] py-0.5 px-2 rounded-sm">10GbE</span>
-                        </div>
-                        <div class="ProductTitle">
-                            <h3 class="text-[20px] font-normal text-[#000615]">Catalyst 9300 Series</h3>
-                        </div>
-                        <div class="productdescription mb-3">
-                            <p class="text-[14px] font-normal text-[#44474D]">Fixed stackable enterprise switching latform for security, IoT, and cloud.</p>
-                        </div>
-                        <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">THROUGHPUT</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">480 Gbps</span>
-                                    </div>
-                                    <div class="flex flex-col gap-2 items-start mt-4">
-                                        <h4 class="text-[12px] font-normal text-[#94A3B8]">PORTS</h4>
-                                        <span class="text-[12px] font-bold text-[#1B1B1E] ">48x 10/100/1000</span>
+                    </div>
+                    <div class="itemCard lg:max-w-75 lg:max-h-142.5 flex flex-col border border-[#C4C6CE] rounded-sm">
+                        <div class="img">
+                            <div class="imgBackground bg-[#F1F5F9] p-6 relative">
+                                <img class="mix-blend-multiply opacity-90 "
+                                    src="./assets/Imgs/Products/TitaniumSeriesRack.png" alt="Switch image">
+                                <div class="pruductStatuse absolute top-2 left-2 hidden">
+                                    <span
+                                        class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl"></span>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="iteminfo p-4 flex flex-col gap-2 ">
+                            <div class="ProductTags flex flex-row  gap-x-2">
+                                <span
+                                    class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">NETCORE</span>
+                                <span
+                                    class="text-[10px] font-normal bg-[#F8FAFC] text-[#1E293B] py-0.5 px-2 rounded-sm">42U</span>
+                            </div>
+                            <div class="ProductTitle">
+                                <h3 class="text-[20px] font-normal text-[#000615]">Titanium Series Rack</h3>
+                            </div>
+                            <div class="productdescription mb-3">
+                                <p class="text-[14px] font-normal text-[#44474D]">Industrial grade 42U enclosure with
+                                    integrated cooling and PDU mounts.</p>
+                            </div>
+                            <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">Load Cap.</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">3,000 lbs</span>
                                 </div>
-                        <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
-                            <span class="text-[18px] font-bold text-[#000615]">$4,895.00</span>
-                            <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
-                                VIEW
-                            </button>
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">Depth</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">1200mm</span>
+                                </div>
+                            </div>
+                            <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
+                                <span class="text-[18px] font-bold text-[#000615]">$1,890.00</span>
+                                <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
+                                    VIEW
+                                </button>
+                            </div>
                         </div>
                     </div>
+                    <div class="itemCard lg:max-w-75 lg:max-h-142.5 flex flex-col border border-[#C4C6CE] rounded-sm">
+                        <div class="img">
+                            <div class="imgBackground bg-[#F1F5F9] p-6 relative">
+                                <img class="mix-blend-multiply opacity-90 "
+                                    src="./assets/Imgs/Products/25GSFP28Transceiver.png" alt="SFP image">
+                                <div class="pruductStatuse absolute top-2 left-2 hidden">
+                                    <span
+                                        class="text-[12px] font-bold bg-[#22C55E] text-[#FFFFFF] p-2 rounded-xl"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iteminfo p-4 flex flex-col gap-2 ">
+                            <div class="ProductTags flex flex-row  gap-x-2">
+                                <span
+                                    class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">CABLES</span>
+                                <span
+                                    class="text-[10px] font-normal bg-[#EEF2FF] text-[#4F46E5] py-0.5 px-2 rounded-sm">SFP28</span>
+                            </div>
+                            <div class="ProductTitle">
+                                <h3 class="text-[20px] font-normal text-[#000615]">25G SFP28 Transceiver</h3>
+                            </div>
+                            <div class="productdescription mb-3">
+                                <p class="text-[14px] font-normal text-[#44474D]">Multi-mode fiber module for high-speed
+                                    data center interconnects up to</p>
+                            </div>
+                            <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">Wavelength</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">850nm</span>
+                                </div>
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">Max Dist.</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">100m</span>
+                                </div>
+                            </div>
+                            <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
+                                <span class="text-[18px] font-bold text-[#000615]">$185.00</span>
+                                <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
+                                    VIEW
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemCard lg:max-w-75 lg:max-h-142.5 flex flex-col border border-[#C4C6CE] rounded-sm">
+                        <div class="img">
+                            <div class="imgBackground bg-[#F1F5F9] p-6 relative">
+                                <img class="mix-blend-multiply opacity-90 "
+                                    src="./assets/Imgs/Products/ASR1001-XRouter.png" alt="ASR image">
+                                <div class="pruductStatuse absolute top-2 left-2">
+                                    <span
+                                        class="text-[12px] font-bold bg-[#DC2626] text-[#FFFFFF] p-2 rounded-xl">LIMITED
+                                        STOCK</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iteminfo p-4 flex flex-col gap-2 ">
+                            <div class="ProductTags flex flex-row  gap-x-2">
+                                <span
+                                    class="text-[10px] font-normal bg-[#F1F5F9] text-[#44474D] py-0.5 px-2 rounded-sm">CISCO</span>
+                                <span
+                                    class="text-[10px] font-normal bg-[#FAF5FF] text-[#9333EA] py-0.5 px-2 rounded-sm">ASR</span>
+                            </div>
+                            <div class="ProductTitle">
+                                <h3 class="text-[20px] font-normal text-[#000615]">ASR 1001-X Router</h3>
+                            </div>
+                            <div class="productdescription mb-3">
+                                <p class="text-[14px] font-normal text-[#44474D]">Aggregation Services Router providing
+                                    multi-service edge solutions.</p>
+                            </div>
+                            <div class="itemSpecs grid grid-cols-2 gap-y-2 border-t border-t-[#F1F5F9]">
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">Bandwidth</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">20 Gbps</span>
+                                </div>
+                                <div class="flex flex-col gap-2 items-start mt-4">
+                                    <h4 class="text-[12px] font-normal text-[#94A3B8]">Memory</h4>
+                                    <span class="text-[12px] font-bold text-[#1B1B1E] ">8GB DRAM</span>
+                                </div>
+                            </div>
+                            <div class="ProductPrice flex flex-row justify-between items-center gap-x-4">
+                                <span class="text-[18px] font-bold text-[#000615]">$12,500.00</span>
+                                <button class="cursor-pointer border border-[#0B1F3A] p-2 rounded-sm">
+                                    VIEW
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="pagenation"></div>
+                <div class="Pagination my-6">
+                    <div class="flex items-center justify-between border-t border-white/10 px-4 py-3 sm:px-6">
+                        <div class="flex flex-1 justify-between sm:hidden">
+                            <a href="#"
+                                class="relative inline-flex items-center rounded-md border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-[#000615] hover:bg-white/10">Previous</a>
+                            <a href="#"
+                                class="relative ml-3 inline-flex items-center rounded-md border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-[#000615] hover:bg-white/10">Next</a>
+                        </div>
+                        <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-center">
+                            <div>
+                                <nav aria-label="Pagination" class="isolate inline-flex -space-x-px rounded-md">
+                                    <a href="#"
+                                        class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 inset-ring inset-ring-gray-700 hover:bg-white/5 focus:z-20 focus:outline-offset-0">
+                                        <span class="sr-only">Previous</span>
+                                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                            class="size-5">
+                                            <path
+                                                d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                                                clip-rule="evenodd" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" aria-current="page"
+                                        class="relative z-10 inline-flex items-center bg-[#000615] px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">1</a>
+                                    <a href="#"
+                                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-black inset-ring inset-ring-gray-700 hover:bg-white/5 focus:z-20 focus:outline-offset-0">2</a>
+                                    <a href="#"
+                                        class="relative hidden items-center px-4 py-2 text-sm font-semibold text-black inset-ring inset-ring-gray-700 hover:bg-white/5 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
+                                    <span
+                                        class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-black inset-ring inset-ring-gray-700 focus:outline-offset-0">...</span>
+                                    <a href="#"
+                                        class="relative hidden items-center px-4 py-2 text-sm font-semibold text-black inset-ring inset-ring-gray-700 hover:bg-white/5 focus:z-20 focus:outline-offset-0 md:inline-flex">8</a>
+                                    <a href="#"
+                                        class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 inset-ring inset-ring-gray-700 hover:bg-white/5 focus:z-20 focus:outline-offset-0">
+                                        <span class="sr-only">Next</span>
+                                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                            class="size-5">
+                                            <path
+                                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                                clip-rule="evenodd" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
