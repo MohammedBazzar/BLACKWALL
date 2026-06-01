@@ -87,3 +87,10 @@ body{
     position: relative;
     z-index: 2;
 }
+
+.active-link{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #2563EB;
+    color: #2563EB;
+}
